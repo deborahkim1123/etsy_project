@@ -8,8 +8,8 @@ def get_return_date(df):
 
 st.title('Test using Etsy orders')
 
-df_2021 = pd.read_csv('/Users/DEBORAH/Downloads/EtsySoldOrders2021 (2).csv')
-df_2022 = pd.read_csv('/Users/DEBORAH/Downloads/EtsySoldOrders2022.csv')
+df_2021 = pd.read_csv('EtsySoldOrders2021 (2).csv')
+df_2022 = pd.read_csv('EtsySoldOrders2022.csv')
 df = pd.concat([df_2022, df_2021])
 
 df['Sale Year'] = pd.DatetimeIndex(df['Sale Date']).year
